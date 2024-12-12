@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Купить Toyota Camry</title>
+    <link rel="stylesheet" href="styles-car.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Ссылка на файл стилей (если есть) -->
+    <!-- Добавляем ссылку на Font Awesome для иконок -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Логотип" class="logo-img">
+            <span>QUALITY</span>
+        </div>
+        <div class="location">
+            <i class="fas fa-map-marker-alt"></i> Забайкальский край
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Автомобили</a></li>
+                <li><a href="#">Грузовики и спецтехника</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-star"></i>
+            <a href="reg.html" id="account-icon">
+                <i class="fas fa-user"></i> 
+            </a>
+            <script src="script.js"></script>
+            <button class="callback-btn">Заказать звонок</button>
+        </div>
+    </header>
+
+   
+    <main class="product-card">
+        <div class="product-card">
+            <div class="product-header">
+                <span class="star-icon">★</span>
+                <h2>Продажа Toyota Camry, 2005 год в Петровске-Забайкальском</h2>
+            </div>
+            <div class="product-content">
+                <div class="product-images">
+                    <!-- Основное изображение -->
+                    <img id="main-image" src="toyota-camry.jpg" alt="Основное изображение">
+                    <div class="thumbnails">
+                        <!-- Миниатюры изображений -->
+                        <img class="thumbnail" src="1.jpg" alt="Миниатюра 1">
+                        <img class="thumbnail" src="2.jpg" alt="Миниатюра 2">
+                        <img class="thumbnail" src="3.jpg" alt="Миниатюра 3">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="price">915 000 ₽</p>
+                    <ul class="specs">
+                        <li>Двигатель: бензин, 2.4 л</li>
+                        <li>Мощность: 159 л.с.</li>
+                        <li>Коробка передач: АКПП</li>
+                        <li>Привод: передний</li>
+                        <li>Тип кузова: седан</li>
+                        <li>Цвет: синий</li>
+                        <li>Пробег: 232 691 км</li>
+                        <li>Руль: правый</li>
+                    </ul>
+                    <p class="description">
+                        4 хозяина 25ПТСПробег 232 000км роднойДвигатель, АКПП чувствуют себя отлично!Ходовая без нареканий, поменяны шаровые, 
+пыльники приводов, задние амортизаторы, сайлентблоки живые.Китайских бамперов фар и т.д нетувсе оригиналКондиционер работает.Печка жарит.Сигнализация с А/ЗАКБ хороший.ВЛОЖЕНИЙ НЕ ТРЕБУЕТ!Отчёт скину в мессенджерыЛюбые проверки
+                    </p>
+                    <button class="buy-btn">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+                
+            
+            
+              
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <!-- Логотип -->
+            <div class="footer-column">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo" class="logo-img">
+                    <span>Quality</span>
+                </div>
+            </div>
+    
+            <!-- Ссылки -->
+            <div class="footer-column">
+                <ul>
+                    <li><a href="#">Автомобили</a></li>
+                    <li><a href="#">Грузовики и спецтехника</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Запчасти</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                </ul>
+            </div>
+    
+            <!-- Контакты и карта -->
+            <div class="footer-column">
+                <ul class="contacts">
+                    <li><a href="#"><i class="fas fa-phone-alt"></i> Телефон: +79245551123</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Адрес: ул. Ковыльная, д. 6</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Часы работы: с 09:00 до 22:00 ежедневно</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Подключение Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+
+    <script>
+        // Находим все миниатюры и основное изображение
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImage = document.getElementById('main-image');
+    
+        // Добавляем обработчик событий на каждую миниатюру
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function() {
+                // Меняем src у основного изображения на src миниатюры
+                mainImage.src = this.src;
+            });
+        });
+    </script>
+</body>
+</html>

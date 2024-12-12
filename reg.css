@@ -1,0 +1,60 @@
+/* Стили для формы регистрации */
+.registration-form {
+    display: none; /* Скрыта по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1000;
+}
+
+.registration-form form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: white;
+}
+
+.registration-form button {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.registration-form button.close-btn {
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+
+.registration-form button:hover {
+    background-color: #ff4d4d;
+}
+
+.registration-form input:focus {
+    outline: none;
+    border-color: #ff0000;
+}

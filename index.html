@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Cars</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <span>QUALITY</span>
+        </div>
+        <div class="location">
+            <i class="fas fa-map-marker-alt"></i> Забайкальский край
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Автомобили</a></li>
+                <li><a href="#">Грузовики и спецтехника</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-star"></i>
+            <a href="reg.html" id="account-icon">
+                <i class="fas fa-user"></i> 
+            </a>
+            <script src="script.js"></script>
+            <button class="callback-btn">Заказать звонок</button>
+        </div>
+    </header>
+    
+    
+    
+
+    <main>
+        <section class="hero">
+            <img src="car.jpg" alt="Car" class="hero-image">
+            <div class="hero-text">
+                <h1>Мы крупнейшие перекупы в России</h1>
+                <p>Закажи звонок, и мы подберем тебе машину под любой бюджет</p>
+                <button class="primary-btn">Заказать звонок</button>
+            </div>
+        </section>
+
+        <section class="search">
+            <form class="search-form">
+                <button type="button" id="search-icon"><img src="logo.png" alt="Search Logo"></button>
+                <input type="text" id="search-input" placeholder="Найти автомобиль...">
+            </form>
+        </section>
+
+        <section class="cars">
+            <button class="zag-btn">Автомобили в наличии и под заказ</button>
+            <div class="car-list">
+                <div class="car-card">
+                    <img src="toyota-camry.jpg" alt="Toyota Camry">
+                    <h3>Toyota Camry 2005</h3>
+                    <p>Цена: 950 000 руб.</p>
+                    <button class="buy-btn" onclick="window.location.href='camry.html'">Подробнее</button>
+                </div>
+                <div class="car-card">
+                    <img src="fielder.jpg" alt="Toyota Corolla Fielder">
+                    <h3>Toyota Corolla Fielder</h3>
+                    <p>Цена: 875 000 руб.</p>
+                    <button class="buy-btn" onclick="viewCarDetails('toyota-fielder')">Подробнее</button>
+                </div>
+                <div class="car-card">
+                    <img src="lexus.jpg" alt="Lexus RX500h">
+                    <h3>Lexus RX500h</h3>
+                    <p>Цена: 12 500 000 руб.</p>
+                    <button class="buy-btn" onclick="viewCarDetails('lexus')">Подробнее</button>
+                </div>
+            </div>
+
+            <div class="car-list">
+                <div class="car-card">
+                    <img src="premio.jpg" alt="Toyota Premio">
+                    <h3>Toyota Premio 2008</h3>
+                    <p>Цена: 915 000 руб.</p>
+                    <button class="buy-btn" onclick="viewCarDetails('toyota-premio')">Подробнее</button>
+                </div>
+                <div class="car-card">
+                    <img src="harier.jpg" alt="Toyota Harier">
+                    <h3>Toyota Harier 2009</h3>
+                    <p>Цена: 2 500 000 руб.</p>
+                    <button class="buy-btn" onclick="viewCarDetails('toyota-harier')">Подробнее</button>
+                </div>
+                <div class="car-card">
+                    <img src="camry1.jpg" alt="Toyota Camry">
+                    <h3>Toyota Camry 2015</h3>
+                    <p>Цена: 1 500 000 руб.</p>
+                    <button class="buy-btn" onclick="viewCarDetails('toyota-camry1')">Подробнее</button>
+                </div>
+            </div>
+
+            
+            <div class="pagination">
+                <button class="page-btn">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+            </div>
+        </section>
+    </main>
+
+    <section class="reviews">
+        <button class="zag-btn">Отзывы владельцев авто</button>
+        <div class="review-list">
+            <div class="review-card">
+                <img src="opel.jpg" alt="User Photo">
+                <h3>Opel Antara 2014</h3>
+                <p>5 отзывов</p>
+            </div>
+            <div class="review-card">
+                <img src="mzk.jpg" alt="User Photo">
+                <h3>MKZ 2020</h3>
+                <p>2 отзыва</p>
+                
+            </div>
+            <div class="review-card">
+                <img src="haval.jpg" alt="User Photo">
+                <h3>HAVAL H3 2024</h3>
+                <p>44 отзыва</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="podborki">
+        <button class="zag-btn">Наши подборки</button>
+        <div class="podborki-list">
+            <div class="podborki-card">
+                <img src="family.jpg" alt="User Photo">
+                <h3>Семейные автомобили</h3>
+                <button class="buy-btn" onclick="viewCarDetails('toyota-camry1')">Открыть</button>
+            </div>
+            <div class="podborki-card">
+                <img src="city.jpg" alt="User Photo">
+                <h3>Городские автомобили</h3>
+                <button class="buy-btn" onclick="viewCarDetails('toyota-camry1')">Открыть</button>
+                
+            </div>
+            <div class="podborki-card">
+                <img src="forest.jpg" alt="User Photo">
+                <h3>Авто для леса</h3>
+                <button class="buy-btn" onclick="viewCarDetails('toyota-camry1')">Открыть</button>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <!-- Логотип -->
+            <div class="footer-column">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo" class="logo-img">
+                    <span>Quality</span>
+                </div>
+            </div>
+    
+            <!-- Ссылки -->
+            <div class="footer-column">
+                <ul>
+                    <li><a href="#">Автомобили</a></li>
+                    <li><a href="#">Грузовики и спецтехника</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Запчасти</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                </ul>
+            </div>
+    
+            <!-- Контакты и карта -->
+            <div class="footer-column">
+                <ul class="contacts">
+                    <li><a href="#"><i class="fas fa-phone-alt"></i> Телефон: +79245551123</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Адрес: ул. Ковыльная, д. 6</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Часы работы: с 09:00 до 22:00 ежедневно</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Подключение Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+</body>
+</html>
